@@ -5,21 +5,21 @@
 		<LangVersion>10.0</LangVersion>
 		<Nullable>warnings</Nullable>
 		<ImplicitUsings>disable</ImplicitUsings>
-		<Version>0.0.6</Version>
+		<Version>0.9.0</Version>
 		<Authors>RafaelEstevam.Net</Authors>
 		<Company>SHARP SISTEMAS LTDA</Company>
 		<Product>C# Models for PIX</Product>
 		<Description>C# models for PIX</Description>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<PackageProjectUrl>https://github.com/SharpSistemas/SicoobAPI</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/SharpSistemas/SicoobAPI</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/SharpSistemas/PIX-BCB</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/SharpSistemas/PIX-BCB</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>BCB PIX</PackageTags>
 		<PackageReleaseNotes>
 			See examples and documentation on the GitHub page
-			https://github.com/SharpSistemas/SicoobAPI
+			https://github.com/SharpSistemas/PIX-BCB
 		</PackageReleaseNotes>
-		<PackageReadmeFile>README-BCB.PIX.md</PackageReadmeFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<NoWarn>$(NoWarn);1591</NoWarn>
 	</PropertyGroup>
