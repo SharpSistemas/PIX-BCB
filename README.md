@@ -17,9 +17,6 @@ Este repositório contém:
 
 Serão criados repositórios e pacotes para cada PSP
 
-Repositório:
-[![.NET](https://github.com/SharpSistemas/SicoobAPI/actions/workflows/dotnet.yml/badge.svg)](https://github.com/SharpSistemas/SicoobAPI)
-
 Pacote:
 [![NuGet](https://buildstats.info/nuget/CS.BCB.PIX)](https://www.nuget.org/packages/CS.BCB.PIX)
 
