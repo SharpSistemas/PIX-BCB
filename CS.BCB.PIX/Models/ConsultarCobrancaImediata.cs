@@ -3,13 +3,10 @@
  * Autor: Rafael Estevam              *
  *        gh/SharpSistemas/SicoobAPI  *
 \**************************************/
-using System;
+namespace CS.BCB.PIX.Models;
 
-namespace CS.BCB.PIX.Models
+public class ConsultarCobrancaImediata : ConsultaCpfCnpj
 {
-    public class ConsultarCobrancaImediata : ConsultaCpfCnpj
-    {
-        public bool? locationPresente { get; set; }
-        public string? status { get; set; }
-    }
+    public bool? locationPresente { get; set; }
+    public string? status { get; set; }
 }
