@@ -13,7 +13,7 @@ public class NovaCobrancaImediata
     public CalendarioImadiataCriacao calendario { get; set; }
     public NomeCpfCnpj devedor { get; set; }
     public DadosLocCriacao loc { get; set; }
-    public Valor valor { get; set; }
+    public ValorModalidade valor { get; set; }
     public string chave { get; set; }
 
     public string? solicitacaoPagador { get; set; }
@@ -24,7 +24,7 @@ public class NovaCobrancaImediata
         return new NovaCobrancaImediata()
         {
             chave = chave,
-            valor = new Valor()
+            valor = new ValorModalidade()
             {
                 original = valor,
                 modalidadeAlteracao = 0 // não pode mudar

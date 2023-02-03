@@ -51,7 +51,7 @@ public class DadosLocCriacao
 {
     public int id { get; set; }
 }
-public class Valor
+public class ValorOriginal
 {
     // O valor precisa serializar como string
     // Não funcionou fazer o mapeamento
@@ -63,13 +63,15 @@ public class Valor
     [JsonProperty(PropertyName = "original")]
     public string valor_para_serializacao
     {
-        get { return original.ToString("#0.00",System.Globalization.CultureInfo.InvariantCulture); }
+        get { return original.ToString("#0.00", System.Globalization.CultureInfo.InvariantCulture); }
         set { original = decimal.Parse(value, System.Globalization.CultureInfo.InvariantCulture); }
     }
-
+}
+public class ValorModalidade : ValorOriginal
+{
     public int modalidadeAlteracao { get; set; }
 }
-public class ValorVencimento : Valor
+public class ValorVencimento : ValorModalidade
 {
     public ModalidadeValorPercentual Multa { get; set; }
     public ModalidadeValorPercentual Juros { get; set; }
@@ -103,6 +105,25 @@ public class ValorPercentual
         get { return valorPerc.ToString("#0.00", System.Globalization.CultureInfo.InvariantCulture); }
         set { valorPerc = decimal.Parse(value, System.Globalization.CultureInfo.InvariantCulture); }
     }
+}
+public class InformacoesValor_Valor
+{
+    public decimal valor { get; set; }
+}
+public class InformacoesValor_Saque : InformacoesValor_Valor
+{
+    public string modalidadeAgente { get; set; }
+    public string prestadorDeServicoDeSaque { get; set; }
+}
+public class ComponentesValor
+{
+    public InformacoesValor_Valor original { get; set; }
+    public InformacoesValor_Saque saque { get; set; }
+    public InformacoesValor_Saque troco { get; set; }
+    public InformacoesValor_Valor juros { get; set; }
+    public InformacoesValor_Valor multa { get; set; }
+    public InformacoesValor_Valor abatimento { get; set; }
+    public InformacoesValor_Valor desconto { get; set; }
 }
 
 public class ResponseParametros

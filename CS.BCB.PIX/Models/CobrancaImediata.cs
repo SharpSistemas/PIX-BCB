@@ -27,7 +27,7 @@ public class CobrancaImediata
     public CalendarioImediata calendario { get; set; }
     public NomeCpfCnpj devedor { get; set; }
     public DadosLoc loc { get; set; }
-    public Valor valor { get; set; }
+    public ValorModalidade valor { get; set; }
     public string chave { get; set; }
     public string solicitacaoPagador { get; set; }
     public NomeValor[] infoAdicionais { get; set; }

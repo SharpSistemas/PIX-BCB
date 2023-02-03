@@ -24,7 +24,7 @@ public class NovaCobrancaVencimento
         return new NovaCobrancaImediata()
         {
             chave = chave,
-            valor = new Valor()
+            valor = new ValorModalidade()
             {
                 original = valor,
                 modalidadeAlteracao = 0 // não pode mudar
