@@ -20,6 +20,9 @@ Serão criados repositórios e pacotes para cada PSP
 Pacote:
 [![NuGet](https://buildstats.info/nuget/CS.BCB.PIX)](https://www.nuget.org/packages/CS.BCB.PIX)
 
+Para saber a lista de PSPs que seguem o padrão, ou ter uma ideia de quanto do padrão é seguido por cada uma, 
+veja a issue 76 do repostório do BACEN https://github.com/bacen/pix-api/issues/76
+
 # Implementações:
 
 ## Banco Sicoob:
