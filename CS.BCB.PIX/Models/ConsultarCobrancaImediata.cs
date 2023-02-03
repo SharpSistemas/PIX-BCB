@@ -1,7 +1,7 @@
 ﻿/**************************************\
  * Biblioteca C# para APIs do PIX     *
  * Autor: Rafael Estevam              *
- *        gh/SharpSistemas/SicoobAPI  *
+ *          gh/SharpSistemas/PIX-BCB  *
 \**************************************/
 namespace CS.BCB.PIX.Models;
 
