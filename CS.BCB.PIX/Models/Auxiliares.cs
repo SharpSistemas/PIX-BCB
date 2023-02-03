@@ -63,7 +63,7 @@ public class Valor
     [JsonProperty(PropertyName = "original")]
     public string valor_para_serializacao
     {
-        get { return original.ToString(System.Globalization.CultureInfo.InvariantCulture); }
+        get { return original.ToString("#0.00",System.Globalization.CultureInfo.InvariantCulture); }
         set { original = decimal.Parse(value, System.Globalization.CultureInfo.InvariantCulture); }
     }
 
@@ -100,7 +100,7 @@ public class ValorPercentual
     [JsonProperty(PropertyName = "valorPerc")]
     public string valor_para_serializacao
     {
-        get { return valorPerc.ToString(System.Globalization.CultureInfo.InvariantCulture); }
+        get { return valorPerc.ToString("#0.00", System.Globalization.CultureInfo.InvariantCulture); }
         set { valorPerc = decimal.Parse(value, System.Globalization.CultureInfo.InvariantCulture); }
     }
 }
